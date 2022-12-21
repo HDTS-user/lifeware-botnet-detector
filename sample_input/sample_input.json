@@ -1,0 +1,16 @@
+{
+    "StartTime": "2011/08/11 09:53:40.240135",
+    "Dur": 9.016532,
+    "Proto": "tcp",
+    "SrcAddr": "31.96.153.11",
+    "Sport": 60257,
+    "Dir": "->",
+    "DstAddr": "147.32.84.229",
+    "Dport": 443,
+    "State": "SRA_SA",
+    "sTos": 0.0,
+    "dTos": 0.0,
+    "TotPkts": 7,
+    "TotBytes": 508,
+    "SrcBytes": 208
+}
