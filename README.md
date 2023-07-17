@@ -1,1 +1,1 @@
-# lifeware-botnet-detector
+# DefenSight-botnet-detector
