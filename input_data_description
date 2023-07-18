@@ -1,1 +1,82 @@
 ## Input Data Description
+
+Field name: StartTime
+Description: Timestamp of the network data capture
+Data type: Date & Time
+Required: Yes
+
+Field name: Dur
+Description: Duration of data capture
+Data type: Continuous (Float)
+Range: Min: 0
+Required: Yes
+
+Field name: Proto
+Description: Network message protocols.
+Data type: Categorical
+Required: Yes
+Allowed values: tcp, udp, rtp, arp, icmp, ipv6-icmp, ipx/spx, rtcp, pim, igmp, udt, ipv6, esp
+
+Field name: SrcAddr
+Description: IP address of the source of network traffic
+Data type: Text
+Required: Yes
+Limitations: Needs to be in IP format
+
+Field name: Sport
+Description: Port number of source of network traffic
+Data type: Integer
+Required: Yes
+
+Field name: Dir
+Description: Direction of network traffic
+Data type: Categorical
+Required: Yes
+Allowed values: ->, ?>, <->, <?>, who, <-
+
+Field name: DstAddr
+Description: IP address of the destination of network traffic
+Data type: FreeText
+Required: Yes
+Limitations: Needs to be in IP format
+
+Field name: Dport
+Description: Port number of destination of network traffic
+Data type: Integer
+Required: Yes
+
+Field name: State
+Description:This represents the state of the transaction according to the protocol and has a total of 207 different unique values.
+Data type: Categorical
+Required: Yes
+Allowed values: 207 unique values
+
+Field name: sTos
+Description: Source Type of Service field
+Data type: Categorical
+Required: Yes
+Allowed values: 0, 1, 2, 3, 192, NaN
+
+Field name: dTos
+Description: Destination Type of Service field
+Data type: Categorical
+Required: Yes
+Allowed values: 0, 1, 2, 3, NaN
+
+Field name: TotPkts
+Description: It represents the total transaction packet count
+Data type: Integer
+Range:Min: 1 Max: 2686731
+Required: Yes
+
+Field name: TotBytes
+Description: Total transaction bytes
+Data type: Integer
+Range: Min: 60 Max: 999999999
+Required: Yes
+
+Field name: SrcBytes
+Description: Total transaction bytes from source to destination
+Data type: Integer
+Range: Min: 0 Max: 999999999
+Required: Yes
